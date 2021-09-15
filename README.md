@@ -1,0 +1,2 @@
+# Practica_Sistemas_distribuidos_1
+ La aplicacion debía construirse utilizando Java, Maven, Spring MVC, HTML5 y el gestor de bases de datos H2 además de funcionar correctamente en Windows y en el navegador Mozilla Firefox.  Se utilizarán pa ginas y plantillas HTML5 y hojas de estilo CSS. Toda la informacio n sobre la presentacion de los elementos debera estar en la(s) hoja(s) de estilos CSS. Se puede utilizar como base una hoja de estilos ya existente de las muchas que pueden conseguirse en Internet. x. Para el acceso a la base de datos se utilizara el ORM de Spring Data 
