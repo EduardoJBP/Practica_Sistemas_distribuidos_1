@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+h2, h1 {
+	color: darkslateblue;
+}
+
+p, li, label {
+	color: darkmagenta;
+	font-size: 20px;
+}
+
+body {
+	background-color: #AFEEEE;
+	font-size: 20px;
+}
+
+button, input, textarea {
+	text-decoration: none;
+	padding: 2px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #1883ba;
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid #0016b0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<style>
+li>span {
+	color: white;
+	padding-right: 1em;
+	vertical-align: -webkit-baseline-middle;
+}
+</style>
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<div class="navbar-nav mr-auto">
+				<a class="navbar-brand" href="/">Tierra agricola</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<form action="/newcultivo/crearCultivo" method="post">
+		<div style='text-align:center'>
+		<h2>Añadir Cultivo</h2>
+		</div>
+		<div>
+			<label>Especie: </label> <input name="especie" placeholder="especie" />
+		</div>
+		<div>
+			<label>Variedad: </label> <input name="variedad"
+				placeholder="variedad" />
+		</div>
+		<div>
+			<label>Zona: </label> <input name="zona" placeholder="zona" />
+		</div>
+		<div>
+			<label>Fecha: </label> <input type="date" name="fecha"
+				placeholder="fecha" />
+		</div>
+
+		<div>
+			<label>Elige Tratamientos:(SIGA EL FORMATO) </label> <input
+				name="tratamientos" placeholder="1,2,3.." />
+		</div>
+		<br>
+		<p>
+			<button onclick="location.href='/cultivos'; return false;">Cancel</button>
+			<input type="submit" value="Guardar" />
+		</p>
+
+	</form>
+
+</body>
+</html>

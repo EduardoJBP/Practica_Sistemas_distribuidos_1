@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<style>
+li>span {
+	color: white;
+	padding-right: 1em;
+	vertical-align: -webkit-baseline-middle;
+}
+</style>
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<div class="navbar-nav mr-auto">
+				<a class="navbar-brand" href="/">Tierra agricola</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<form action="/newTratamiento/crear" method="post">
+		<div style='text-align:center'>
+		<h2>Tratamiento:</h2>
+		</div>
+		<div>
+			<label>Lote: </label> <input name="lote" value="" placeholder="lote" />
+		</div>
+		<div>
+			<label>Fecha Realizacion: </label> <input type="date"
+				name="fecharealiza" placeholder="fecharealiza" />
+		</div>
+
+		<div>
+			<label>Elige Cultivo: </label> <input type="number" name="cultivo"
+				placeholder="cultivo.id" value="0" min="0" />
+		</div>
+		<div>
+			<label>Elige Fitosanitario: </label> <input type="number"
+				name="fitosanitario" placeholder="fitosanitario.id" value="0"
+				min="0" />
+		</div>
+		<br>
+		<p>
+			<button onclick="location.href='/tratamientos'; return false;">Cancel</button>
+			<input type="submit" value="Guardar" />
+		</p>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<style>
+li>span {
+	color: white;
+	padding-right: 1em;
+	vertical-align: -webkit-baseline-middle;
+}
+</style>
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<div class="navbar-nav mr-auto">
+				<a class="navbar-brand" href="/">Tierra agricola</a>
+			</div>
+
+		</div>
+
+	</nav>
+	<div style='text-align:center'>
+	<br><br><br>
+	<h1>Tierra agricola</h1>
+	<br><br>
+	<button onclick="location.href='/fitosanitarios'">Ver
+		productos fitosanitarios</button>
+	<br>
+	<br>
+	<button onclick="location.href='/cultivos'">Ver cultivos</button>
+	<br>
+	<br>
+	<button onclick="location.href='/tratamientos'">Ver
+		tratamientos</button>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<style>
+li>span {
+	color: white;
+	padding-right: 1em;
+	vertical-align: -webkit-baseline-middle;
+}
+
+h2 {
+	color: darkslateblue;
+}
+
+p, li, label {
+	color: darkmagenta;
+	font-size: 20px;
+}
+
+body {
+	background-color: #AFEEEE;
+	font-size: 20px;
+}
+
+button, input, textarea {
+	text-decoration: none;
+	padding: 2px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #1883ba;
+	background-color: white;
+	border-radius: 7px;
+	border: 2px solid #0016b0;
+}
+</style>
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<div class="navbar-nav mr-auto">
+				<a class="navbar-brand" href="/">Tierra agricola</a>
+			</div>
+
+		</div>
+
+	</nav>
+		<div style='text-align:center'>
+			<h2 th:text="'Tratamiento con id: ' + ${Tratamiento.id}"></h2>
+			<br>
+			<p>
+				<samp th:text="'Id del Cultivo al que corresponde '"></samp>
+				<a th:href="@{'/cultivos/' + ${Tratamiento.cultivo.id}}"
+					th:text="${Tratamiento.cultivo.id}"></a>
+			</p>
+
+			<p>
+				<samp th:text="'Producto al que corresponde: '"></samp>
+				<a th:href="@{'/fitosanitarios/' + ${Tratamiento.fitosanitario.id}}"
+					th:text="${Tratamiento.fitosanitario.id}"></a>
+			</p>
+
+			<p th:text="'Lote: ' + ${Tratamiento.id}"></p>
+			<p
+				th:text="'Fecha en la que se realizó: ' + ${Tratamiento.fecharealiza}"></p>
+			<p
+				th:text="'Fecha de reentrada: ' + ${Tratamiento.fechareen}"></p>
+			<p th:text="'Fecha de recoleccion: ' + ${Tratamiento.fecharec}"></p>
+
+			<p>
+				<a th:href="@{'/editTratamiento/' + ${Tratamiento.id}}">Modificar</a>
+			</p>
+
+		</div>
+		<br>
+		<div style='text-align:center'>
+		<p>
+			<button onclick="location.href='/tratamientos'">Volver</button>
+		</p>
+		</div>
+</body>
+</html>

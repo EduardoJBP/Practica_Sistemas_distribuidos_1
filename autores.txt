@@ -1,0 +1,16 @@
+Grupo 1E
+
+Participantes:
+	Antón Shvets  NIE: X6388356Z
+	Rubén Zamora Belinchón DNI: 02796479R
+	Eduardo José Barrameda Portieles DNI: 02322832Q
+	Andrés Bienayas Sánchez DNI: 04236579W
+
+
+Todos los participantes del grupo han estado en el desarrollo de todas las tareas, cumpliendo así el mínimo de tareas exigidas
+por cada participante.
+Aún así, cada uno ha liderado el desarrollo de ciertas partes del proyecto:
+
+Antón y Andrés: Plantillas y hojas de estilo
+Rubén: Clases Java de cada tipo y enlazar hojas de estilo con plantillas
+Eduardo José: Controladores, base de datos y repositorios.
